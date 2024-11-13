@@ -11,6 +11,7 @@ for i = 1, 1000 do
 
     game:GetService("ReplicatedStorage"):WaitForChild("ReviveSystem"):WaitForChild("Event"):FireServer(unpack(args))
 end
+wait(1)
 for i = 1, 1000 do
     local args = {
         [1] = "RevivePlayerEr",
@@ -19,7 +20,7 @@ for i = 1, 1000 do
 
     game:GetService("ReplicatedStorage"):WaitForChild("ReviveSystem"):WaitForChild("Event"):FireServer(unpack(args))
 end
-
+wait(1)
 for i = 1, 1000 do
     local args = {
         [1] = "RevivePlayerEr",
@@ -28,7 +29,7 @@ for i = 1, 1000 do
 
     game:GetService("ReplicatedStorage"):WaitForChild("ReviveSystem"):WaitForChild("Event"):FireServer(unpack(args))
 end
-
+wait(1)
 for i = 1, 1000 do
     local args = {
         [1] = "RevivePlayerEr",
@@ -37,7 +38,7 @@ for i = 1, 1000 do
 
     game:GetService("ReplicatedStorage"):WaitForChild("ReviveSystem"):WaitForChild("Event"):FireServer(unpack(args))
 end
-
+wait(1)
 for i = 1, 1000 do
     local args = {
         [1] = "RevivePlayerEr",
