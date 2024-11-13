@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-character:MoveTo(Vector3.new(1565, 60, -469))
+character:MoveTo(Vector3.new(1527, 60, -469))
 
 wait(1)
 for i = 1, 1000 do
