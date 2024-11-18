@@ -343,3 +343,67 @@ end)
             })
         end
     })
+        Tabs.Main:AddButton({
+        Title = "Boreas_Sword",
+        Description = "Very important button",
+        Callback = function()
+            Window:Dialog({
+                Title = "Title",
+                Content = "This is a dialog",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                    local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Function to trigger the event
+local function activateSword()
+    local args = {
+        [1] = player.Character.Boreas_Sword.Handle
+    }
+    player.Character.Boreas_Sword.Combo.Kie:FireServer(unpack(args))
+end
+
+-- Listen for key press
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.R then
+        activateSword()
+    end
+end)
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Function to trigger the event
+local function activateSword()
+    local args = {
+        [1] = player.Character.Boreas_Sword.Handle
+    }
+    player.Character.Boreas_Sword.Combo.C0:FireServer(unpack(args))
+end
+
+-- Listen for key press
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.Q then
+        activateSword()
+    end
+end)
+
+
+
+
+
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
