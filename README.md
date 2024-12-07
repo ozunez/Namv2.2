@@ -2400,3 +2400,4 @@ end
 
 submit.MouseButton1Click:Connect(submitKey)
 textBox.FocusLost:Connect(function(enterPressed) if enterPressed then submitKey() end end)
+--eiei
